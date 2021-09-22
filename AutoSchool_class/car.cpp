@@ -24,3 +24,8 @@ void car::getData()
 	cout.width(11);
 	cout << num << " ||\n";
 }
+
+string car::getNum()
+{
+	return num;
+}

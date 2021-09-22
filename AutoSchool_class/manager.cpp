@@ -31,3 +31,8 @@ void manager::getData()
 	cout.width(11);
 	cout << phone << " ||\n";
 }
+
+string manager::getFio()
+{
+	return fio;
+}

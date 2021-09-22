@@ -4,6 +4,7 @@
 #include "instructor.h"
 #include "manager.h"
 #include "car.h"
+#include "record.h"
 
 using namespace std;
 
@@ -25,7 +26,11 @@ int main()
     manag1.getData();
 
     car cr1;
-    cr1.setData();
+    cr1.init();
     cr1.getData();
+
+    record rec1;
+    rec1.init();
+    rec1.getData();
 }
 

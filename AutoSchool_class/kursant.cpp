@@ -45,3 +45,8 @@ void kursant::getData()
 	cout.width(2);
 	cout << category << " ||\n";
 }
+
+string kursant::getFio()
+{
+	return fio;
+}

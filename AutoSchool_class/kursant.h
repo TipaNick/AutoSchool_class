@@ -18,5 +18,6 @@ public:
     void init();
     void setData();
     void getData();
+    string getFio();
 };
 

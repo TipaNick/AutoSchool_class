@@ -45,3 +45,8 @@ void instructor::getData()
 	cout.width(2);
 	cout << exp << " ||\n";
 }
+
+string instructor::getFio()
+{
+	return fio;
+}
