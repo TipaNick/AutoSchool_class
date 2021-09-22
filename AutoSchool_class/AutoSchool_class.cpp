@@ -3,6 +3,7 @@
 #include "kursant.h"
 #include "instructor.h"
 #include "manager.h"
+#include "car.h"
 
 using namespace std;
 
@@ -23,6 +24,8 @@ int main()
     manag1.init();
     manag1.getData();
 
-
+    car cr1;
+    cr1.setData();
+    cr1.getData();
 }
 

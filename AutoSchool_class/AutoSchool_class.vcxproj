@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AutoSchool_class.cpp" />
+    <ClCompile Include="car.cpp" />
     <ClCompile Include="instructor.cpp" />
     <ClCompile Include="kursant.cpp" />
     <ClCompile Include="manager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="car.h" />
     <ClInclude Include="instructor.h" />
     <ClInclude Include="kursant.h" />
     <ClInclude Include="manager.h" />

@@ -2,9 +2,9 @@
 
 void instructor::init()
 {
-	fio = "П.П.Пример";
-	age = 18;
-	email = "ppp@mail.ru";
+	fio = "П.Б.Пример";
+	age = 35;
+	email = "pbp@mail.ru";
 	phone = "880055535350";
 	exp = 7;
 }
