@@ -13,24 +13,17 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
+    /*kursant* kurs2 = new kursant;
+    kurs2->getData();
+    (*kurs2).getData();
+    kurs2[0].getData();*/
+
     kursant kurs1;
-    kurs1.init();
-    kurs1.getData();
+    kurs1.printAll();
 
-    instructor inst1;
-    inst1.init();
-    inst1.getData();
+    kursant kurs2("Привет", 18, "123", "123", "123");
+    kurs2.printAll();
 
-    manager manag1;
-    manag1.init();
-    manag1.getData();
 
-    car cr1;
-    cr1.init();
-    cr1.getData();
-
-    record rec1;
-    rec1.init();
-    rec1.getData();
 }
 

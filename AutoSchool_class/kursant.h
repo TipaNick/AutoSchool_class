@@ -15,9 +15,10 @@ private:
     string phone;
     string category;
 public:
-    void init();
-    void setData();
-    void getData();
+    kursant();
+    kursant(string fio, int age, string email, string phone, string category);
+    void input();
+    void printAll();
     string getFio();
 };
 

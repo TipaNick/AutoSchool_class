@@ -1,6 +1,6 @@
 #include "kursant.h"
 
-void kursant::init()
+kursant::kursant()
 {
 	fio = "П.П.Пример";
 	age = 18;
@@ -9,7 +9,16 @@ void kursant::init()
 	category = "Б";
 }
 
-void kursant::setData()
+kursant::kursant(string fio, int age, string email, string phone, string category)
+{
+	this->fio = fio;
+	this->age = age;
+	this->email = email;
+	this->phone = phone;
+	this->category = category;
+}
+
+void kursant::input()
 {
 	cout << "Введите ФИО: ";
 	cin >> fio;
@@ -23,7 +32,7 @@ void kursant::setData()
 	cin >> category;
 }
 
-void kursant::getData()
+void kursant::printAll()
 {
 	cout << "Курсант:\n|| ФИО: ";
 	cout.width(15);

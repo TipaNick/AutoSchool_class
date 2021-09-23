@@ -14,9 +14,10 @@ private:
     string phone;
     int exp;
 public:
-    void init();
-    void setData();
-    void getData();
+    instructor();
+    instructor(string fio, int age, string email, string phone, int exp);
+    void input();
+    void printAll();
     string getFio();
 };
 

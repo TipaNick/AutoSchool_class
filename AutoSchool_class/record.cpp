@@ -2,7 +2,7 @@
 
 void record::init()
 {
-	kurs.init();
+	
 	inst.init();
 	manag.init();
 	time = "22.09.2021 23:53";
@@ -11,7 +11,7 @@ void record::init()
 
 void record::setData()
 {
-	kurs.setData();
+	kurs.input();
 	inst.setData();
 	manag.setData();
 	cout << "¬ведите верм€ записи: ";

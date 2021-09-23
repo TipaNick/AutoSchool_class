@@ -1,15 +1,24 @@
 #include "instructor.h"
 
-void instructor::init()
+instructor::instructor()
 {
-	fio = "П.Б.Пример";
+	fio = "П.В.Пример";
 	age = 35;
-	email = "pbp@mail.ru";
-	phone = "880055535350";
-	exp = 7;
+	email = "pvp@mail.ru";
+	phone = "+79132776449";
+	exp = 12;
 }
 
-void instructor::setData()
+instructor::instructor(string fio, int age, string email, string phone, int exp)
+{
+	this->fio = fio;
+	this->age = age;
+	this->email = email;
+	this->phone = phone;
+	this->exp = exp;
+}
+
+void instructor::input()
 {
 	cout << "Введите ФИО: ";
 	cin >> fio;
@@ -23,7 +32,7 @@ void instructor::setData()
 	cin >> exp;
 }
 
-void instructor::getData()
+void instructor::printAll()
 {
 	cout << "Инструктор:\n|| ФИО: ";
 	cout.width(15);
