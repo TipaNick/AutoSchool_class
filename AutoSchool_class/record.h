@@ -13,8 +13,9 @@ private:
 	string time;
 	car cr;
 public:
-	void init();
-	void setData();
-	void getData();
+	record();
+	record(kursant kurs, instructor inst, manager manag, string time, car cr);
+	void input();
+	void printAll();
 };
 

@@ -1,12 +1,18 @@
 #include "car.h"
 
-void car::init()
+car::car()
 {
 	model = "Lada Granta";
 	num = "А111АА 122";
 }
 
-void car::setData()
+car::car(string model, string num)
+{
+	this->model = model;
+	this->num = num;
+}
+
+void car::input()
 {
 	cout << "Введите модель: ";
 	getline(cin, model);
@@ -14,7 +20,7 @@ void car::setData()
 	getline(cin, num);
 }
 
-void car::getData()
+void car::printAll()
 {
 	cout << "Машина:\n|| Модель: ";
 	cout.width(model.length() + 3.0);

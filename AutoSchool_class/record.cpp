@@ -1,25 +1,30 @@
 #include "record.h"
 
-void record::init()
+record::record()
 {
-	
-	inst.init();
-	manag.init();
 	time = "22.09.2021 23:53";
-	cr.init();
 }
 
-void record::setData()
+record::record(kursant kurs, instructor inst, manager manag, string time, car cr)
+{
+	this->kurs = kurs;
+	this->inst = inst;
+	this->manag = manag;
+	this->time = time;
+	this->cr = cr;
+}
+
+void record::input()
 {
 	kurs.input();
-	inst.setData();
-	manag.setData();
+	inst.input();
+	manag.input();
 	cout << "Введите вермя записи: ";
 	cin >> time;
-	cr.setData();
+	cr.input();
 }
 
-void record::getData()
+void record::printAll()
 {
 	cout << "Запись:\n|| ФИО курсанта: ";
 	cout.width(15);

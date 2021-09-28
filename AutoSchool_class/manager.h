@@ -12,9 +12,10 @@ private:
 	int age;
 	string phone;
 public:
-	void init();
-	void setData();
-	void getData();
+	manager();
+	manager(string fio, int age, string phone);
+	void input();
+	void printAll();
 	string getFio();
 };
 

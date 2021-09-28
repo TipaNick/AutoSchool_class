@@ -11,9 +11,10 @@ private:
 	string model;
 	string num;
 public:
-	void init();
-	void setData();
-	void getData();
+	car();
+	car(string model, string num);
+	void input();
+	void printAll();
 	string getNum();
 };
 

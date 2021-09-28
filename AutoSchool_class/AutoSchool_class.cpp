@@ -18,12 +18,24 @@ int main()
     (*kurs2).getData();
     kurs2[0].getData();*/
 
-    kursant kurs1;
-    kurs1.printAll();
+    int n = 5;
 
-    kursant kurs2("Привет", 18, "123", "123", "123");
-    kurs2.printAll();
+    //Статичная переменная
+    kursant kurs1; //Уже с данным, конструктор
+    //Статичный массив
+    kursant list_kurs[5]; //Конструктор
+    
+    //Динамическая переменная
+    kursant *kurs2 = new kursant;
 
+    delete kurs2;
+    //Динамический массив
+    kursant* list_kurs2 = new kursant[n];
+    
+    for (int i = 0; i < n; i++) {
+        list_kurs2[i].printAll();  // считываем числа в ячейки массива
+    }
 
+    delete[] list_kurs2;
 }
 
