@@ -7,14 +7,14 @@
 class record
 {
 private:
-	kursant kurs;
+	kursant *kurs;
 	instructor inst;
 	manager manag;
 	string time;
 	car cr;
 public:
 	record();
-	record(kursant kurs, instructor inst, manager manag, string time, car cr);
+	record(kursant &kurs, instructor inst, manager manag, string time, car cr);
 	void input();
 	void printAll();
 };

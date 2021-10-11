@@ -2,12 +2,13 @@
 
 record::record()
 {
+	this->kurs = new kursant;
 	time = "22.09.2021 23:53";
 }
 
-record::record(kursant kurs, instructor inst, manager manag, string time, car cr)
+record::record(kursant &kurs, instructor inst, manager manag, string time, car cr)
 {
-	this->kurs = kurs;
+	*(this->kurs) = kurs;
 	this->inst = inst;
 	this->manag = manag;
 	this->time = time;
@@ -16,7 +17,7 @@ record::record(kursant kurs, instructor inst, manager manag, string time, car cr
 
 void record::input()
 {
-	kurs.input();
+	(*kurs).input();
 	inst.input();
 	manag.input();
 	cout << "Введите вермя записи: ";
@@ -28,7 +29,7 @@ void record::printAll()
 {
 	cout << "Запись:\n|| ФИО курсанта: ";
 	cout.width(15);
-	cout << kurs.getFio();
+	cout << (*kurs).getFio();
 	cout.width(0);
 	cout << " || ФИО инструктора: ";
 	cout.width(15);
