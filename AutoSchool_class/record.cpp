@@ -2,13 +2,13 @@
 
 record::record()
 {
-	this->kurs = new kursant;
+	this->kurs = new kursant("fio", 12, "email", "phone", "category");
 	time = "22.09.2021 23:53";
 }
 
 record::record(kursant &kurs, instructor inst, manager manag, string time, car cr)
 {
-	*(this->kurs) = kurs;
+	this->kurs = &kurs;
 	this->inst = inst;
 	this->manag = manag;
 	this->time = time;
