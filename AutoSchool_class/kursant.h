@@ -14,6 +14,7 @@ private:
     string email;
     string phone;
     string category;
+    string test_age;
 public:
     kursant();
     kursant(string fio, int age, string email, string phone, string category);

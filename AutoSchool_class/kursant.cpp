@@ -23,7 +23,29 @@ void kursant::input()
 	cout << "Введите ФИО: ";
 	cin >> fio;
 	cout << "Введите возраст: ";
-	cin >> age;
+	cin >> test_age;
+	try
+	{
+		age = stoi(test_age);
+	}
+	catch (invalid_argument)
+	{
+		cout << "Не правильный ввод\n";
+	}
+
+	if (age < 16)
+	{
+		try {
+			throw -1;
+		}
+		catch (int a) {
+			if (a == -1)
+			{
+				cout << "Возраст меньше 16\n";
+			}
+		}
+	}
+
 	cout << "Введите почту: ";
 	cin >> email;
 	cout << "Введите телефон: ";

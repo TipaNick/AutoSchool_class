@@ -38,13 +38,8 @@ int main()
 
     //delete[] list_kurs2;
 
-    kursant abc("fio", 12, "email", "phone", "category");
-    instructor inst;
-    manager man;
-    car cr;
-    record rec;
-
-    rec.printAll();
+    kursant kurs1;
+    kurs1.input();
 
 }
 
